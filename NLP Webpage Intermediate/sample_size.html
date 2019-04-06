@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <title> Thannoj and Sample Sizes</title>
+    </head>
+    
+    <body>
+        <div class="subheadings"> Thannoj and Sample Sizes </div>
+                
+                <div>
+                <canvas id="myCanvas"></canvas>
+                </div>
+                
+                <div class="text">So obviously Thannoj's messages are more easily distinguised from everyone else in the group right? WRONG! This erroneous conclusion we've been led to is exactly the reason why sample sizes need to be controlled for. Rogges for instance has 98506 messages over the past 2 years while Thannoj only has 1873. If I made a "ML model" that only predicted Rogges as the author regardless of the input, it would be 98.1% accurate on a dataset of Rogges' and Thannoj's messages despite being a piece of hot garbage. For this reason, message sample size will be controlled for by randomly sampling messages of members with more messages than Thannoj.
+                    
+                </div>
+                
+                <div>
+                <canvas id="myCanvas1"></canvas>
+                </div>
+                
+                <div class="text">Just about every distinguishability score took a nosedive of 15% or more except Nawed and Harris who already had very low message counts.
+                Obviously sample size control is essential and that's what I was trying to illustrate here; moving forward all of the models that I use will control sample size by setting the size to the least amount of messages contributed by a member of the comparison group. For example, the 2nd graph in this section was calculated by taking sample sizes equivalent to the amount of messages contributed by Thannoj.
+                </div>
+    
+    
+        <script src="sample_size.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <title> Polarity</title>
+    </head>
+    <body>
+            <div class="subheadings"> Polarity Scores </div>
+                <table class="dataframe" style="width:75%">
+                    <tr>
+                        <th>Name</th>
+                        <th>Compound Score</th>
+                        <th>Positive Score</th>
+                        <th>Negative Score</th>
+                    </tr>
+                    <tr>
+                        <th>Ali Javed</th>
+                        <th>0.068</th>
+                        <th>0.150</th>
+                        <th>0.071</th>
+                    </tr>
+                    <tr>
+                        <th>Ali Nawed</th>
+                        <th>0.044</th>
+                        <th>0.159</th>
+                        <th>0.091</th>
+                    </tr>
+                    <tr>
+                        <th>Aushvin Vasanthakumaran</th>
+                        <th>0.011</th>
+                        <th>0.116</th>
+                        <th>0.097</th>
+                    </tr>
+                    <tr>
+                        <th>Hamza Ahsan</th>
+                        <th>0.023</th>
+                        <th>0.135</th>
+                        <th>0.103</th>
+                    </tr>
+                    <tr>
+                        <th>Harris Ismael</th>
+                        <th>0.065</th>
+                        <th>0.138</th>
+                        <th>0.077</th>
+                    </tr>
+                    <tr>
+                        <th>Janusshan Paramasivam</th>
+                        <th>-0.008</th>
+                        <th>0.122</th>
+                        <th>0.117</th>
+                    </tr>
+                    <tr>
+                        <th>Kishan Baskaran</th>
+                        <th>0.065</th>
+                        <th>0.124</th>
+                        <th>0.065</th>
+                    </tr>
+                    <tr>
+                        <th>Pavi Subenderan</th>
+                        <th>0.039</th>
+                        <th>0.119</th>
+                        <th>0.077</th>
+                    </tr>
+                    <tr>
+                        <th>Rogges Anandarajah</th>
+                        <th>0.038</th>
+                        <th>0.137</th>
+                        <th>0.096</th>
+                    </tr>
+                    <tr>
+                        <th>Saad Daas</th>
+                        <th>0.020</th>
+                        <th>0.120</th>
+                        <th>0.089</th>
+                    </tr>
+                    <tr>
+                        <th>Thannoj Thavalingam</th>
+                        <th>0.082</th>
+                        <th>0.156</th>
+                        <th>0.080</th>
+                    </tr>
+                </table>
+        
+                <div class="text">
+                    So who cares about polarity scores and all this stuff? It's important because it tells you how positive, negative or neutral your messages tend to be. The positivity and negativity scores are an approximation to the proportion of messages that were rated as positive or negative. The remaining proportion of messages were rated as neutral but that measure has been excluded because it's not particularly interesting.
+                </div>
+        
+                <div class="text">
+                    The most important bit of information however is the compound score. The compound score aggregates all 3 dimensions of polarity into one number. Overall, a compound score >0.05 is considered generally positive. A score between -0.05 and 0.05 is neutral and generally negative has to be less than -0.05.
+                </div>
+        
+                <button class="insight">Help I need Javascript to tell me who the positive group members are</button>
+        
+
+            
+            <script src="polarity.js"></script>
+    </body>
+</html>
