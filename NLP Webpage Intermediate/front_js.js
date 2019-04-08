@@ -9,3 +9,7 @@ document.getElementById("tile1").addEventListener('click', function() {
 document.getElementById("tile6").addEventListener('click', function() {
     window.location.href = "polarity.html";
 });
+
+document.getElementById("tile8").addEventListener('click', function() {
+    window.location.href = "vocab_size.html";
+});
