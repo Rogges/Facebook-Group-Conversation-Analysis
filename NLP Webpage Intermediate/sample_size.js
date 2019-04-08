@@ -108,3 +108,60 @@ var myChart1 = new Chart(c1, {
         }
     }
 });
+
+
+var c2 = document.getElementById("myCanvas2").getContext("2d");
+var myChart1 = new Chart(c2, {
+    type: 'bar',
+    data: {
+        labels: ['Harris', 'Rogges', 'Saad', 'Javed', 'Nawed', 'AV', 'Janusshan', 'Kishan', 'Pavi', 'Hamza'],
+        datasets: [{
+            label: 'Vocabulary Size (Words)',
+            data: [70, 67, 70, 72, 71, 74, 68, 70, 65, 73],
+            backgroundColor: 'rgba(00, 00, 00, 0.65)',
+            borderColor: 'rgba(255, 255, 255, 0.9)',
+            borderWidth: 3.5
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    fontSize: 22,
+                    fontColor: 'white',
+                    max: 100
+                },
+                gridLines: {
+                    color: 'white'
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    fontSize: 22,
+                    fontColor: 'white'
+                },
+                gridLines: {
+                    color: 'white'
+                }
+            }]
+        },
+        layout: {
+            padding: {
+                top: 50,
+                bottom: 50,
+                right: 200,
+                left: 200
+            }
+        },
+        title: {
+            display: true,
+            text: "Vocabulary Size (Words)",
+            fontSize: 25,
+            fontColor: 'white'
+        },
+        legend: {
+            display: false
+        }
+    }
+});
