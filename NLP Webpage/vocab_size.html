@@ -1,0 +1,38 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+        <title> Vocab Size</title>
+    </head>
+    
+    <body>
+        <div class="subheadings"> 
+            Vocabulary Size of Group Members
+        </div>
+        
+        <div>
+            <canvas id="myCanvas2"></canvas>
+        </div>
+        
+        <div>
+            <canvas id="myCanvas3"></canvas>
+        </div>
+    
+        <div class="text">
+            Vocabulary Size is estimated by counting up the unique words used by a member across all of their messages. So if you used "yo" 1000 times across the past two years, it would only count as 1 word in your vocabulary. The vocabulary size:message count ratio is a metric I came up with to see how many unique words a person will use in any given message. Thannoj leads the pack with 1.16 unique words per message but I suppose that's to be expected given how little he messages anyways. 
+        </div>
+    
+        <div class="text">
+            Aushvin's numbers are however interesting. Despite having 2-4x the messages as Harris or Ali Nawed, his vocabulary is still smaller than theirs. This is quite unexpected as people with more messages typically have a larger absolute vocabulary size. His vocab to message ratio is closer to people that have far more messages than he does which suggests a greater deal of repetitive word use in messages than other members. A conservative conclusion on this note might be that Aushvin's messages have been disproprtionately affected by pre-processing. A more liberal and, in my opinion, superior conclusion is that Aushvin should spend less time watching the NBA and more time reading.
+        </div>
+    
+        <div class="text">
+            If you're wondering how the pre-processing might have affected Aushvin, visit the Model Description page to learn more:
+            <a href="model.html" id="link0">Model Description</a>
+        </div>
+    
+        <script src="vocab_size.js"></script>
+    
+    </body>
