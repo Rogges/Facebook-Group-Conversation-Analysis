@@ -5,7 +5,7 @@ var myChart1 = new Chart(c2, {
         labels: ['Harris', 'Rogges', 'Saad', 'Javed', 'Nawed', 'AV', 'Janusshan', 'Kishan', 'Pavi', 'Hamza', 'Thannoj'],
         datasets: [{
             label: 'Vocabulary Size (Words)',
-            data: [3737, 26525, 17697, 12382, 5706, 5283, 7534, 11123, 7880, 5845, 2183],
+            data: [3719, 26485, 17652, 12266, 5690, 5168, 7489, 11114, 7857, 5779, 2176],
             backgroundColor: 'rgba(00, 00, 00, 0.65)',
             borderColor: 'rgba(255, 255, 255, 0.9)',
             borderWidth: 3.5

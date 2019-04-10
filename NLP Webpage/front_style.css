@@ -22,6 +22,13 @@ body {
     font-family: Lato;
 }
 
+#words1 {
+    font-size: 20;
+    color: black;
+    margin-top: 125;
+    font-family: Lato;
+}
+
 #text0 {
     font-size: 28;
     font-family: Lato;
@@ -44,4 +51,9 @@ body {
     font-size: 30;
     font-family: Lato;
     color: white;
+}
+
+#pic0 {
+    height: 133px;
+    width: 310px;
 }

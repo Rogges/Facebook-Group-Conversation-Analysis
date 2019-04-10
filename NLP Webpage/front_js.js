@@ -13,3 +13,7 @@ document.getElementById("tile6").addEventListener('click', function() {
 document.getElementById("tile8").addEventListener('click', function() {
     window.location.href = "vocab_size.html";
 });
+
+document.getElementById("tile0").addEventListener('click', function() {
+    window.location.href = "word_cloud.html";
+});
