@@ -17,3 +17,7 @@ document.getElementById("tile8").addEventListener('click', function() {
 document.getElementById("tile0").addEventListener('click', function() {
     window.location.href = "word_cloud.html";
 });
+
+document.getElementById("tile5").addEventListener('click', function() {
+    window.location.href = "model.html";
+});

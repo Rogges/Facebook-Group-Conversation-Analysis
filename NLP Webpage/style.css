@@ -42,6 +42,14 @@ body {
 
 }
 
+.text1 {
+    font-size: 20.5px;
+    color: azure;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
 .insight {
     font-size: 24px;
     font-family: Lato;

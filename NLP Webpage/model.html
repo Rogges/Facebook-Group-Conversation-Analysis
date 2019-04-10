@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Model Description</title>
+    </head>
+    
+    <body>
+        <p class="headings">How did I manage all of this?</p>
+        
+        <div class="text1">
+            Be forewarned that this will be a lot of dense information so don't feel you need to read all of it in order to appreciate the rest of the stuff. Still reading through all of this will probably help you understand why I did what I did and why I didn't do other things.
+        </div>
+        
+        <div class="subheadings">What am I trying to do?</div>
+        <div class="text1">
+            The primary reason I started this project initially with the notion of creating chat bots based upon conversation messages. However, I quickly switched over to just more advanced NLP which was a more logical transition from my first go at it when I made the infographic. The intro page has a few more details that you can read regarding this.
+        </div>
+        
+        <div class="subheadings">Collecting and Preparing the Data</div>
+        <div class="text1">
+            Data collection and preparation are honestly the hardest part of any data science project. Collection in this case was relatively easy because FB makes it easy to get your conversation data now. Preparation was however another beast entirely.
+        </div>
+        <div class="text1">
+            As you might imagine, processing text data is difficult because words can have multiple conjugations, meanings, and thanks to Saad, multiple spellings. But this isn't the only problem either; another major problem are reserved characters. The apostrophe and slashes are reserved characters in many programming languages and so something as simple as "it's" may be recorded as "itâ\x80\x99s" which makes my life even more complicated.
+        </div>
+        <div class="text1">
+            To deal with this all this stuff, I did a few processing steps to get cleaner data. Stemming and Lemmatizing are common ways of processing text data. Both methods have the same goal of reducing conjugational or varying forms of words to their roots. Stemming reduces words to a stem by stripping a suffix but doesn't check if the stem belongs to the main language, e.g. ponies -> poni because it strips the es suffix. Lemmatizing is similar but it checks if the stem belongs to the language so a lemmatizer would reduce ponies to pony. 
+            
+            I used both but ended up settling on a lemmatizer because it performed better. This explains why you might see very common verb/noun forms in the word clouds for each person. If you wondering why I didn't leave all the varying forms in, its because they don't matter. Whether you discuss thinking; a thought; having thought; about to think it's still all about thinking. 
+        </div>
+        <div class="text1">
+            Following lemmatizing, I removed reserved character including expressions as best as possible. Then I removed punctuation marks, and idiotic self-references. Self-references are messages like "Ali Javed changed Rogges Anandarajah's nickname". Those types of conversation activities are recorded as messages and if not dealt with makes it seem like group members are speaking in the third person about themselves. Lastly, I removed stopwords; stopwords are just conjunctions and other types of meaningless speech like: the, and, or, but. Overall, all these steps took several days to plan and map out. It wasn't as linear as this because I started with lemmatizing but I figured out the reserved characters and self-references later on in the project and had to adjust accordingly
+        </div>
+        <div class="text1">
+            Once the message data was nice and clean, there was one final step; vectorizing. As you might realize, computers don't speak English and thus, neither do ML models. In that way, we need to turn text into numerical data that a model can process. I used a TF-IDF vectorizer which measures the frequency of a term relative to a document (message in this case) then weights this frequency appropriately. Specifically, terms that appear very often are scaled down while terms that appear infrequently are scaled up. The frequency of a term in a document is called Term Frequency (TF). The weighting process is called Inverse Document Frequency (IDF). Thus we have the TF-IDF vectorizer. The vectorizer process is reversible so once we've done processing, prediction vectors can be reversed to get text back out.
+        </div>
+        
+        <div class="subheadings">Model Selection</div>
+        <div class="text1">
+            This step wasn't as painful as data processing but it still required some work. Choosing the best option amongst a multitude of available models was difficult but I ultimately started with a Multinomial Bayes Theorem which I used before for a very basic spam e-mail classifier. Multinomial Bayes is built upon Bayes Theorem of conditional probability; the Multinomial variant is key because it is used for discrete data like text counts. Multinomial Bayes worked reasonably well but I ended up moving to XGBoost. XGBoost is a very powerful machine learning library that's quite popular right now and I can see why. After tuning a few parameters, I was able to pull out a 65% accuracy rate when trying to classify messages between: Rogges, Saad, and Javed. This is almost 33% better than chance, and if I tweak it some more, I'm fairly certain I can get 70% or better. The XGBoost model also passes the eye test by classifying messages that can easily be attributed to one of the 3 members. E.g. "Joanna Nash made another lab tech cry" is attributed correctly to Saad. 
+        </div>
+        <div class="text1">
+            Now I know you're wondering if 65-70% accuracy is any good and I can tell you it's pretty decent especially with an eye test pass. Obviously mid-high 80s or better is the ideal but those kind of numbers are usually more attainable once you start using neural networks. I could have probably cobbled something together in that realm but I wanted to learn ML from the ground up again with a larger focus on math, so this will have to do for now. Maybe I'll do a version 3 with neural networks in the future. 
+        </div>
+        
+    </body>
+</html>
