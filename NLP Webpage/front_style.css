@@ -29,6 +29,14 @@ body {
     font-family: Lato;
 }
 
+#title3 {
+    font-size: 25;
+    margin-top: 275;
+    color: white;
+    font-family: Lato;
+    position: absolute;
+}
+
 #words1 {
     font-size: 20;
     color: black;
@@ -58,6 +66,12 @@ body {
     font-size: 30;
     font-family: Lato;
     color: white;
+}
+
+#text4 {
+    font-size: 30;
+    font-family: Lato;
+    color: black;
 }
 
 #pic0 {
