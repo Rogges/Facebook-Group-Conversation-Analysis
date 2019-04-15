@@ -25,3 +25,7 @@ document.getElementById("tile5").addEventListener('click', function() {
 document.getElementById("tile3").addEventListener('click', function() {
     window.location.href = "big3.html";
 });
+
+document.getElementById("tile10").addEventListener('click', function() {
+    window.location.href = "future.html";
+});

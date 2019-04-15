@@ -27,6 +27,7 @@ body {
     margin-top: 275;
     color: black;
     font-family: Lato;
+    position: absolute;
 }
 
 #title3 {
@@ -80,6 +81,11 @@ body {
 }
 
 #pic1 {
-    height: 250px;
+    height: 310px;
+    width: 310px;
+}
+
+#pic2 {
+    height: 310px;
     width: 310px;
 }
