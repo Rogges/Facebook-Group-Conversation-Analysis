@@ -29,3 +29,7 @@ document.getElementById("tile3").addEventListener('click', function() {
 document.getElementById("tile10").addEventListener('click', function() {
     window.location.href = "future.html";
 });
+
+document.getElementById("tile4").addEventListener('click', function() {
+    window.location.href = "conclusion.html";
+});
