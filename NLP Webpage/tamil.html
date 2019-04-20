@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="intro.css">
+        <title>Tamil</title>
+    </head>
+    <body>
+        <div class="subheadings">
+            Classifying the Tamils (except Thannoj (not enough messages))
+        </div>
+        <div class="text1">
+            Okay so this is mostly just taking the piss. Classifying 5 people with moderate text processing on a regular classification model is extremely hectic and unlikely to yield really good results but I figured what the heck. It's going to be about a year or two before I'm working on neural networks so I might as well just mess around now. Again XGBoost did much better than I expected here with a strong 50% which is 30% better than chance. I also used a Multinomial Naive Bayes (MNB) algorithm which got a strong 53% accuracy rate on the test set but neither model was very good and I'll explain that shortly.
+        </div>
+        <div class="text1">
+            These models only performed slightly worse than the model classifying myself, Saad, and Javed yet I'm saying these ones are bad despite having the additional load of 2 more people to classify. They suck because they fail the eye test miserably. 
+        </div>
+        <div class="subheadings">
+            Model Lowlights
+        </div>
+        <div class="container">
+            <img src="ajax.jpg" alt="ajax" style="width: 80%; height: 65%">
+            <div class="mid-left2">
+                <p class="quote3">
+                    Yo Janu did you watch Ajax
+                </p>
+                <p class="quote3">
+                    beat Juve yesterday
+                </p>
+                <p class="quote3">
+                    - Kishan Baskaran
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <img src="lyft.png" alt="lyft" style="width: 80%; height: 65%">
+            <div class="centered2">
+                <p class="quote3">
+                    Lyft's IPO is insane and might signal what's to come for Uber
+                </p>
+                <p class="quote3">
+                    - Kishan Baskaran
+                </p>
+            </div>
+        </div>       
+        <div class="container">
+            <img src="steth.jpg" alt="lyft" style="width: 45%; height: 80%">
+            <div class="top-center2">
+                <p class="quote3">
+                    I'm going to be a doctor
+                </p>
+                <p class="quote3">
+                    - Aushvin Vasanthakumaran
+                </p>
+            </div>
+        </div>     
+        <div class="container">
+            <img src="soccer.jpg" alt="lyft" style="width: 45%; height: 80%">
+            <div class="centered3">
+                <p class="quote3">
+                    I watch soccer all the time
+                </p>
+                <p class="quote3">
+                    - Pavi Subenderan
+                </p>
+            </div>
+        </div>  
+        <div class="subheadings">
+            Moral of the Story
+        </div>
+        <div class="text1">
+            Don't blindly believe test set accuracy for models
+        </div>
+    </body>

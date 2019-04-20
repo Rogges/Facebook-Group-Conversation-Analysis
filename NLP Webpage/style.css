@@ -32,10 +32,37 @@ body {
     font-size: 65px;
 }
 
+.centered2 {
+    position: absolute;
+    top: 88%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    color: black;
+}
+
+.centered3 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    color: black;
+}
+
 .mid-left {
     position: absolute;
     top: 60%;
     left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    color: black;
+}
+
+.mid-left2 {
+    position: absolute;
+    top: 60%;
+    left: 20%;
     transform: translate(-50%, -50%);
     font-family: Lato;
     color: black;
@@ -49,6 +76,10 @@ body {
     font-size: 55px;
 }
 
+.quote3 {
+    font-size: 33px;
+}
+
 .top-center {
     position: absolute;
     top: 23%;
@@ -56,6 +87,15 @@ body {
     transform: translate(-50%, -50%);
     font-family: Lato;
     color: white;
+}
+
+.top-center2 {
+    position: absolute;
+    top: 16%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-family: Lato;
+    color: black;
 }
 
 #quote4 {

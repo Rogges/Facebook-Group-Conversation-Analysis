@@ -33,3 +33,7 @@ document.getElementById("tile10").addEventListener('click', function() {
 document.getElementById("tile4").addEventListener('click', function() {
     window.location.href = "conclusion.html";
 });
+
+document.getElementById("tile7").addEventListener('click', function() {
+    window.location.href = "tamil.html";
+});
