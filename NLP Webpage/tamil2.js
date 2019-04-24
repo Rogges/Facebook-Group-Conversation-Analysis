@@ -28,7 +28,7 @@ var roggesQuotes = [
     "At least you are getting your ass kicked",
     "Leave the neuroscience and behaviour to the big cookout in the sky",
     "Oh then i will just use politically insensitive language and try to establish eye contact",
-    "Went as well possible since i was working on making thermite to help me shovel my driveway",
+    "Went as well as possible since i was working on making thermite to help me shovel my driveway",
     "Yo ali you wanna go to chick fil a?",
     "Worst that can happen to me is that they give you exclusive sales or financing if and only if you eat capsaicin aka chillis",
     "If the joker makes sense to you then it is artificially imposed"
