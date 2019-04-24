@@ -35,5 +35,5 @@ document.getElementById("tile4").addEventListener('click', function() {
 });
 
 document.getElementById("tile7").addEventListener('click', function() {
-    window.location.href = "tamil.html";
+    window.location.href = "tamil2.html";
 });

@@ -162,3 +162,54 @@ body {
     color: white;
     font-size: 20.5px;
 }
+
+#rogges {
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    font-family: Lato;
+}
+
+#rogtext {
+    margin-top: 15px;
+}
+
+#kishan {
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    font-family: Lato;
+}
+
+#aushvin {
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    font-family: Lato;
+}
+
+#janu {
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    font-family: Lato;
+}
+
+#pavi {
+    width: 250px;
+    height: 100px;
+    font-size: 50px;
+    font-family: Lato;
+}
+
+#markov_quote {
+    margin-top: -50;
+    margin-left: 900px;
+    font-size: 35;
+    font-family: Lato;
+}
+
+#name {
+    margin-left: 900px;
+    font-size: 25;
+}
